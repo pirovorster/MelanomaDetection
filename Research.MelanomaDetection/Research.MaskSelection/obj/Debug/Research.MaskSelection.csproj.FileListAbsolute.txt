@@ -1,0 +1,13 @@
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\bin\Debug\Research.MaskSelection.exe.config
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\bin\Debug\Research.MaskSelection.exe
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\bin\Debug\Research.MaskSelection.pdb
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\Research.MaskSelection.csprojResolveAssemblyReference.cache
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\MainWindow.baml
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\MainWindow.g.cs
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\App.g.cs
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\Research.MaskSelection_MarkupCompile.cache
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\Research.MaskSelection.g.resources
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\Research.MaskSelection.Properties.Resources.resources
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\Research.MaskSelection.csproj.GenerateResource.Cache
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\Research.MaskSelection.exe
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskSelection\obj\Debug\Research.MaskSelection.pdb

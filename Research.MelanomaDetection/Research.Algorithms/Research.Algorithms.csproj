@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7965DCD-F05E-4A0B-8112-212BBEF3FF47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Research.Algorithms</RootNamespace>
+    <AssemblyName>Research.Algorithms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\packages\AForge.Imaging.2.2.5\lib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.2.6.2\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics.IO">
+      <HintPath>..\packages\MathNet.Numerics.2.6.2\lib\net40\MathNet.Numerics.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classification\ClassifierTrainer.cs" />
+    <Compile Include="Classification\ClassifierTrainingItem.cs" />
+    <Compile Include="Classification\IClassifier.cs" />
+    <Compile Include="Classification\NeuralNetwork.cs" />
+    <Compile Include="Classification\NeuralNetworkLayer.cs" />
+    <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="FastBitmap.cs" />
+    <Compile Include="GroupSplitMask.cs" />
+    <Compile Include="ImageFilters\AverageGrayscaleFilter.cs" />
+    <Compile Include="ImageFilters\FillMaskFilter.cs" />
+    <Compile Include="ImageFilters\OverlayMaskFilter.cs" />
+    <Compile Include="ImageFilters\FillNonMaskFilter.cs" />
+    <Compile Include="ImageFilters\HclBlobDetectionFilter.cs" />
+    <Compile Include="ImageFilters\IImageToMaskFilter.cs" />
+    <Compile Include="ImageFilters\IImmutableImageToImageFilter.cs" />
+    <Compile Include="ImageFilters\IMutableImageToImageFilter.cs" />
+    <Compile Include="ImageFilters\MaskFromFunctionFilter.cs" />
+    <Compile Include="ImageFilters\ResizeFilter.cs" />
+    <Compile Include="IMask.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="Mask.cs" />
+    <Compile Include="Operations\BitmapOperations.cs" />
+    <Compile Include="Operations\ArtifactRemovalOperations.cs" />
+    <Compile Include="Operations\MaskOperations.cs" />
+    <Compile Include="Optimization\IOptimizer.cs" />
+    <Compile Include="Optimization\ParticleSwarm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecializedDataStructures\SplitMaskMergerList.cs" />
+    <Compile Include="SplitMask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

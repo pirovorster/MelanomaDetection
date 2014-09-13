@@ -1,0 +1,10 @@
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\bin\Debug\Research.Model.dll.config
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\bin\Debug\Research.Model.dll
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\bin\Debug\Research.Model.pdb
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\bin\Debug\EntityFramework.dll
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\bin\Debug\EntityFramework.xml
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\obj\Debug\Research.Model.csprojResolveAssemblyReference.cache
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\obj\Debug\Research.Model.dll
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Model\obj\Debug\Research.Model.pdb

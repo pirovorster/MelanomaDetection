@@ -1,0 +1,15 @@
+Variance in HCL				=3
+Variance in RGB				=3
+Border Irregularity			=1
+Relative Chromaticity of each RGB 	=3
+Average	of HCL				=3
+
+
+
+Irregularity = P^2/2(pi)A
+where P is the amount of border pixels and A is the amount of pixels in the lesion
+
+Assemetry. 
+Determine 2 axis of symmetry. Fold. NonOverlapping Area / Overlapping area
+
+Edge abruptness
