@@ -12,6 +12,7 @@ namespace Research.Model
     using System;
     using System.Collections.Generic;
     
+	[Serializable]
     public partial class Feature
     {
         public System.Guid Id { get; set; }

@@ -2,7 +2,10 @@
 using Research.Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,64 +23,128 @@ namespace Research.Training
 				   1 / (1 + Math.Pow(Math.E, -number));
 
 			return (weights) =>
-		   {
-			   double[,] hiddenWeightsMatrix = new double[inputNodes, hiddenNodes];
-			   double[,] outputWeightsMatrix = new double[hiddenNodes, outputNodes];
-			   double[] hiddenBiasWeightsMatrix = new double[hiddenNodes];
-			   double[] outputBiasWeightsMatrix = new double[outputNodes];
+			{
+				double[,] hiddenWeightsMatrix = new double[inputNodes, hiddenNodes];
+				double[,] outputWeightsMatrix = new double[hiddenNodes, outputNodes];
+				double[] hiddenBiasWeightsMatrix = new double[hiddenNodes];
+				double[] outputBiasWeightsMatrix = new double[outputNodes];
 
-			   for (int weightIndex = 0; weightIndex < weights.Length; weightIndex++)
-			   {
-				   if (weightIndex < inputNodes * hiddenNodes)
-				   {
-					   int column = weightIndex / hiddenNodes;
-					   int row = weightIndex % hiddenNodes;
-					   hiddenWeightsMatrix[column, row] = weights[weightIndex];
-				   }
-				   else if (weightIndex < inputNodes * hiddenNodes + (hiddenNodes * outputNodes))
-				   {
-					   int realIndex = weightIndex - inputNodes * hiddenNodes;
-					   int column = realIndex / outputNodes;
-					   int row = realIndex % outputNodes;
-					   outputWeightsMatrix[column, row] = weights[weightIndex];
-				   }
-				   else if (weightIndex < inputNodes * hiddenNodes + (hiddenNodes * outputNodes) + hiddenNodes)
-				   {
-					   int realIndex = weightIndex - (inputNodes * hiddenNodes + (hiddenNodes * outputNodes));
-					   hiddenBiasWeightsMatrix[realIndex] = weights[weightIndex];
-				   }
-				   else
-				   {
-					   int realIndex = weightIndex - (inputNodes * hiddenNodes + (hiddenNodes * outputNodes) + hiddenNodes);
-					   outputBiasWeightsMatrix[realIndex] = weights[weightIndex];
-				   }
+				for (int weightIndex = 0; weightIndex < weights.Length; weightIndex++)
+				{
+					if (weightIndex < inputNodes * hiddenNodes)
+					{
+						int column = weightIndex / hiddenNodes;
+						int row = weightIndex % hiddenNodes;
+						hiddenWeightsMatrix[column, row] = weights[weightIndex];
+					}
+					else if (weightIndex < inputNodes * hiddenNodes + (hiddenNodes * outputNodes))
+					{
+						int realIndex = weightIndex - inputNodes * hiddenNodes;
+						int column = realIndex / outputNodes;
+						int row = realIndex % outputNodes;
+						outputWeightsMatrix[column, row] = weights[weightIndex];
+					}
+					else if (weightIndex < inputNodes * hiddenNodes + (hiddenNodes * outputNodes) + hiddenNodes)
+					{
+						int realIndex = weightIndex - (inputNodes * hiddenNodes + (hiddenNodes * outputNodes));
+						hiddenBiasWeightsMatrix[realIndex] = weights[weightIndex];
+					}
+					else
+					{
+						int realIndex = weightIndex - (inputNodes * hiddenNodes + (hiddenNodes * outputNodes) + hiddenNodes);
+						outputBiasWeightsMatrix[realIndex] = weights[weightIndex];
+					}
 
-			   }
+				}
 
-			   return new NeuralNetwork(inputNodes, new List<NeuralNetworkLayer> { new NeuralNetworkLayer(hiddenWeightsMatrix, hiddenBiasWeightsMatrix, sigmoid) }, new NeuralNetworkLayer(outputWeightsMatrix, outputBiasWeightsMatrix, sigmoid));
-		   };
+				return new NeuralNetwork(inputNodes, new List<NeuralNetworkLayer> { new NeuralNetworkLayer(hiddenWeightsMatrix, hiddenBiasWeightsMatrix, sigmoid) }, new NeuralNetworkLayer(outputWeightsMatrix, outputBiasWeightsMatrix, sigmoid));
+			};
 		}
 
-
+		private class Experiment
+		{
+			public List<string> BenignTrainingSet { get; set; }
+			public List<string> MelanomaTrainingSet { get; set; }
+			public List<string> BenignTestSet { get; set; }
+			public List<string> MelanomaTestSet { get; set; }
+		}
 
 		static void Main(string[] args)
 		{
+			IFormatter formatter = new BinaryFormatter();
+			Stream stream = new FileStream("Features.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+			List<Feature> allFeatures = (List<Feature>)formatter.Deserialize(stream);
+			stream.Close();
 
+			IEnumerable<string> allImages = allFeatures.Select(o => o.Path).Distinct();
+			IEnumerable<string> allMelanomas = allImages.Where(o => melanomaInclusions.Any(i => o == i)).ToList();
+			IEnumerable<string> allBenigns = allImages.Where(o => benignInclusions.Any(i => o == i)).ToList();
 
-			using (MelanomaResearchEntities melanomaResearchEntities = new MelanomaResearchEntities())
+			List<Experiment> experiments = new List<Experiment>();
+			for (int testIndex = 0; testIndex < 10; testIndex++)
 			{
-				var featuresPerImages = melanomaResearchEntities.Features.Where(o => !o.FeatureName.Contains("Bucket")).GroupBy(o => o.Path).ToList();
-				var imagesPerFeatures = melanomaResearchEntities.Features.Where(o => !o.FeatureName.Contains("Bucket")).GroupBy(o => o.FeatureName).ToList();
-				Random ran = new Random(DateTime.Now.Millisecond);
+				IEnumerable<string> randomizedMelanomas = allMelanomas.Select(o => o).Shuffle();
+				IEnumerable<string> randomizedBenigns = allBenigns.Select(o => o).Shuffle();
+				Experiment experiment = new Experiment();
+				experiment.BenignTrainingSet = randomizedBenigns.Take(20).ToList();
+				experiment.MelanomaTrainingSet = randomizedMelanomas.Take(50).ToList();
+				experiment.BenignTestSet = randomizedBenigns.Skip(20).Take(10).ToList();
+				experiment.MelanomaTestSet = randomizedMelanomas.Skip(50).Take(20).ToList();
+				experiments.Add(experiment);
 
-				var melanomas = featuresPerImages.Where(o => melanomaInclusions.Any(i => o.Key==i)).Shuffle().ToList();
-				var benigns = featuresPerImages.Where(o => benignInclusions.Any(i => o.Key == i)).Shuffle().ToList();
+			}
 
-				for (int testIndex = 0; testIndex < 10; testIndex++)
+			List<string> features = allFeatures.Select(o => o.FeatureName).Distinct().ToList();
+
+			var featuresPerImages = allFeatures.Where(o => !o.FeatureName.Contains("Bucket")).GroupBy(o => o.Path).ToList();
+			var imagesPerFeatures = allFeatures.Where(o => !o.FeatureName.Contains("Bucket")).GroupBy(o => o.FeatureName).ToList();
+			Random ran = new Random(DateTime.Now.Millisecond);
+
+
+
+			for (int testIndex = 0; testIndex < 10; testIndex++)
+			{
+				Experiment experiment = experiments[testIndex];
+				List<ClassifierTrainingItem> classifierTrainingItems = new List<ClassifierTrainingItem>();
+
+				foreach (var melanoma in featuresPerImages.Where(o => experiment.MelanomaTrainingSet.Contains(o.Key)))
 				{
-					List<ClassifierTrainingItem> classifierTrainingItems = new List<ClassifierTrainingItem>();
+					List<double> normalizedFeatures = new List<double>();
+					foreach (var imagesPerFeature in imagesPerFeatures)
+					{
+						double normalizationValue = imagesPerFeature.Max(o => o.Value);
+						normalizedFeatures.Add(melanoma.First(o => o.FeatureName.Equals(imagesPerFeature.Key, StringComparison.OrdinalIgnoreCase)).Value / normalizationValue);
+					}
 
-					foreach (var melanoma in melanomas.Take(20))
+
+					classifierTrainingItems.Add(new ClassifierTrainingItem(normalizedFeatures.ToArray(), new double[] { 1, 0 }));
+				}
+
+				foreach (var benign in featuresPerImages.Where(o => experiment.BenignTrainingSet.Contains(o.Key)))
+				{
+					List<double> normalizedFeatures = new List<double>();
+					foreach (var imagesPerFeature in imagesPerFeatures)
+					{
+						double normalizationValue = imagesPerFeature.Max(o => o.Value);
+						normalizedFeatures.Add(benign.First(o => o.FeatureName.Equals(imagesPerFeature.Key, StringComparison.OrdinalIgnoreCase)).Value / normalizationValue);
+					}
+					classifierTrainingItems.Add(new ClassifierTrainingItem(normalizedFeatures.ToArray(), new double[] { 0, 1 }));
+				}
+
+
+
+				ClassifierTrainer trainer = new ClassifierTrainer();
+				double[] trainedWeights = trainer.TrainWeights(
+					new ParticleSwarm(inputNodes * hiddenNodes + hiddenNodes * outputNodes + hiddenNodes + outputNodes, 1000, 1000, -10, 10, 0.729, 1.49445, 1.49445, 0.05, 0.0001), GetNetworkFactory(), classifierTrainingItems);
+
+
+				NeuralNetwork neuralNetwork = GetNetworkFactory()(trainedWeights);
+
+				{
+
+					List<ClassifierTrainingItem> classifierTestItems = new List<ClassifierTrainingItem>();
+
+					foreach (var melanoma in featuresPerImages.Where(o => experiment.MelanomaTestSet.Contains(o.Key)))
 					{
 						List<double> normalizedFeatures = new List<double>();
 						foreach (var imagesPerFeature in imagesPerFeatures)
@@ -86,11 +153,12 @@ namespace Research.Training
 							normalizedFeatures.Add(melanoma.First(o => o.FeatureName.Equals(imagesPerFeature.Key, StringComparison.OrdinalIgnoreCase)).Value / normalizationValue);
 						}
 
+						classifierTestItems.Add(new ClassifierTrainingItem(normalizedFeatures.ToArray(), new double[] { 1, 0 }));
 
-						classifierTrainingItems.Add(new ClassifierTrainingItem(normalizedFeatures.ToArray(), new double[] { 1,0 }));
 					}
 
-					foreach (var benign in benigns.Take(50))
+
+					foreach (var benign in featuresPerImages.Where(o => experiment.BenignTestSet.Contains(o.Key)))
 					{
 						List<double> normalizedFeatures = new List<double>();
 						foreach (var imagesPerFeature in imagesPerFeatures)
@@ -98,95 +166,57 @@ namespace Research.Training
 							double normalizationValue = imagesPerFeature.Max(o => o.Value);
 							normalizedFeatures.Add(benign.First(o => o.FeatureName.Equals(imagesPerFeature.Key, StringComparison.OrdinalIgnoreCase)).Value / normalizationValue);
 						}
-						classifierTrainingItems.Add(new ClassifierTrainingItem(normalizedFeatures.ToArray(), new double[] { 0 ,1}));
+
+						classifierTestItems.Add(new ClassifierTrainingItem(normalizedFeatures.ToArray(), new double[] { 0, 1 }));
 					}
 
+					int falsePositives = 0;
+					int truePositives = 0;
+					int falseNegatives = 0;
+					int trueNegatives = 0;
+					int unknowns = 0;
 
-
-					ClassifierTrainer trainer = new ClassifierTrainer();
-					double[] trainedWeights = trainer.TrainWeights(
-						new ParticleSwarm(inputNodes * hiddenNodes + hiddenNodes * outputNodes + hiddenNodes + outputNodes, 1000, 1000, -10, 10, 0.729, 1.49445, 1.49445, 0.05, 0.0001), GetNetworkFactory(), classifierTrainingItems);
-
-
-					NeuralNetwork neuralNetwork = GetNetworkFactory()(trainedWeights);
-
+					foreach (ClassifierTrainingItem test in classifierTestItems)
 					{
+						double[] classifiedOutputs = neuralNetwork.Classify(test.Features);
 
-						List<ClassifierTrainingItem> classifierTestItems = new List<ClassifierTrainingItem>();
 
-						foreach (var melanoma in melanomas.Skip(20).Take(10))
+
+						if (classifiedOutputs[0] >= 0.7 && classifiedOutputs[1] <= 0.3)
 						{
-							List<double> normalizedFeatures = new List<double>();
-							foreach (var imagesPerFeature in imagesPerFeatures)
-							{
-								double normalizationValue = imagesPerFeature.Max(o => o.Value);
-								normalizedFeatures.Add(melanoma.First(o => o.FeatureName.Equals(imagesPerFeature.Key, StringComparison.OrdinalIgnoreCase)).Value / normalizationValue);
-							}
-
-							classifierTestItems.Add(new ClassifierTrainingItem(normalizedFeatures.ToArray(), new double[] {1,0 }));
-
-						}
-
-
-						foreach (var benign in benigns.Skip(50).Take(20))
-						{
-							List<double> normalizedFeatures = new List<double>();
-							foreach (var imagesPerFeature in imagesPerFeatures)
-							{
-								double normalizationValue = imagesPerFeature.Max(o => o.Value);
-								normalizedFeatures.Add(benign.First(o => o.FeatureName.Equals(imagesPerFeature.Key, StringComparison.OrdinalIgnoreCase)).Value / normalizationValue);
-							}
-
-							classifierTestItems.Add(new ClassifierTrainingItem(normalizedFeatures.ToArray(), new double[] { 0, 1 }));
-						}
-
-						int falsePositives = 0;
-						int truePositives = 0;
-						int falseNegatives = 0;
-						int trueNegatives = 0;
-						int unknowns = 0;
-
-						foreach (ClassifierTrainingItem test in classifierTestItems)
-						{
-							double[] classifiedOutputs = neuralNetwork.Classify(test.Features);
-
-
-
-							if (classifiedOutputs[0] >= 0.7 && classifiedOutputs[1] <= 0.3)
-							{
-								if (1 == test.Outputs[0])
-									truePositives++;
-								else
-									falsePositives++;
-							}
-							else if (classifiedOutputs[0] <= 0.3 && classifiedOutputs[1] >= 0.7)
-							{
-								if (0 == test.Outputs[0])
-									trueNegatives++;
-								else
-									falseNegatives++;
-							}
+							if (1 == test.Outputs[0])
+								truePositives++;
 							else
-							{
-								unknowns++;
-							}
-
-
+								falsePositives++;
 						}
-						Console.WriteLine("##########################################");
-						Console.WriteLine("False Positives: {0}", falsePositives);
-						Console.WriteLine("True Positives: {0}", truePositives);
-						Console.WriteLine("False Negatives: {0}", falseNegatives);
-						Console.WriteLine("True Negatives: {0}", trueNegatives);
-						Console.WriteLine("Unknowns: {0}", unknowns);
-						Console.WriteLine("Accuracy: {0}", (truePositives + trueNegatives) / (double)(falsePositives + truePositives + falseNegatives + trueNegatives));
-						Console.WriteLine();
+						else if (classifiedOutputs[0] <= 0.3 && classifiedOutputs[1] >= 0.7)
+						{
+							if (0 == test.Outputs[0])
+								trueNegatives++;
+							else
+								falseNegatives++;
+						}
+						else
+						{
+							unknowns++;
+						}
+
+
 					}
-
-
+					Console.WriteLine("##########################################");
+					Console.WriteLine("False Positives: {0}", falsePositives);
+					Console.WriteLine("True Positives: {0}", truePositives);
+					Console.WriteLine("False Negatives: {0}", falseNegatives);
+					Console.WriteLine("True Negatives: {0}", trueNegatives);
+					Console.WriteLine("Unknowns: {0}", unknowns);
+					Console.WriteLine("Accuracy: {0}", (truePositives + trueNegatives) / (double)(falsePositives + truePositives + falseNegatives + trueNegatives));
+					Console.WriteLine();
 				}
-				Console.ReadLine();
+
+
 			}
+			Console.ReadLine();
+
 
 
 

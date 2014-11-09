@@ -15,3 +15,6 @@ D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MelanomaDetect
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MelanomaDetection\bin\Debug\Research.Algorithms.pdb
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MelanomaDetection\bin\Debug\MathNet.Numerics.pdb
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MelanomaDetection\bin\Debug\MathNet.Numerics.xml
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MelanomaDetection\bin\Debug\Research.MelanomaDetection.exe.config
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MelanomaDetection\obj\Debug\Research.MelanomaDetection.exe
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MelanomaDetection\obj\Debug\Research.MelanomaDetection.pdb
