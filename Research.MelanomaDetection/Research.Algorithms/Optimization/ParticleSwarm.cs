@@ -147,7 +147,6 @@ namespace Research.Algorithms
 					{
 						_bestParticle = particle.BestDimensionValues;
 						_bestError = error;
-						Console.WriteLine(_bestError);
 					}
 
 					double die = _random.NextDouble();

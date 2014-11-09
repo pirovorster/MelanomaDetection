@@ -1,0 +1,89 @@
+VarianceHue,VarianceChroma,VarianceLightness,VarianceR,VarianceG,VarianceB,AverageR,AverageG,AverageB,AverageHue,AverageLightness,AverageChroma,SkinColorBucket20,WhitishColorBucket20,BlackishColorBucket20,LightBrownOneColorBucket20,BlueOneColorBucket20,BlueTwoColorBucket20,BlueThreeColorBucket20,LightBrownTwoColorBucket20,DarkBrownOneColorBucket20,DarkBrownTwoColorBucket20
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 3
+True Negatives: 20
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 1
+True Positives: 7
+False Negatives: 3
+True Negatives: 18
+Unknowns: 1
+Accuracy: 0,862068965517241
+
+##########################################
+False Positives: 1
+True Positives: 8
+False Negatives: 2
+True Negatives: 19
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 1
+True Positives: 7
+False Negatives: 2
+True Negatives: 19
+Unknowns: 1
+Accuracy: 0,896551724137931
+
+##########################################
+False Positives: 0
+True Positives: 8
+False Negatives: 2
+True Negatives: 20
+Unknowns: 0
+Accuracy: 0,933333333333333
+
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 2
+True Negatives: 20
+Unknowns: 1
+Accuracy: 0,931034482758621
+
+##########################################
+False Positives: 1
+True Positives: 7
+False Negatives: 3
+True Negatives: 18
+Unknowns: 1
+Accuracy: 0,862068965517241
+
+##########################################
+False Positives: 1
+True Positives: 8
+False Negatives: 1
+True Negatives: 19
+Unknowns: 1
+Accuracy: 0,931034482758621
+
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 2
+True Negatives: 18
+Unknowns: 3
+Accuracy: 0,925925925925926
+
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 2
+True Negatives: 20
+Unknowns: 1
+Accuracy: 0,931034482758621
+
+##########################################
+##########################################
+Total False Positives: 5
+Total True Positives: 73
+Total False Negatives: 22
+Total True Negatives: 191
+Total Unknowns: 9
+

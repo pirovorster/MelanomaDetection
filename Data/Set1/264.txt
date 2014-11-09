@@ -1,0 +1,161 @@
+IrregularityIndex,VarianceR,VarianceG,VarianceB,SkinColorBucket20,WhitishColorBucket20,BlackishColorBucket20,LightBrownOneColorBucket20,BlueOneColorBucket20,BlueTwoColorBucket20,BlueThreeColorBucket20,LightBrownTwoColorBucket20,DarkBrownOneColorBucket20,DarkBrownTwoColorBucket20
+##########################################
+False Positives: 2
+True Positives: 5
+False Negatives: 3
+True Negatives: 17
+Unknowns: 3
+Accuracy: 0.814814814814815
+
+##########################################
+##########################################
+Total False Positives: 2
+Total True Positives: 5
+Total False Negatives: 3
+Total True Negatives: 17
+Total Unknowns: 3
+
+##########################################
+False Positives: 3
+True Positives: 5
+False Negatives: 3
+True Negatives: 17
+Unknowns: 2
+Accuracy: 0.785714285714286
+
+##########################################
+##########################################
+Total False Positives: 5
+Total True Positives: 10
+Total False Negatives: 6
+Total True Negatives: 34
+Total Unknowns: 5
+
+##########################################
+False Positives: 2
+True Positives: 5
+False Negatives: 4
+True Negatives: 18
+Unknowns: 1
+Accuracy: 0.793103448275862
+
+##########################################
+##########################################
+Total False Positives: 7
+Total True Positives: 15
+Total False Negatives: 10
+Total True Negatives: 52
+Total Unknowns: 6
+
+##########################################
+False Positives: 2
+True Positives: 7
+False Negatives: 3
+True Negatives: 18
+Unknowns: 0
+Accuracy: 0.833333333333333
+
+##########################################
+##########################################
+Total False Positives: 9
+Total True Positives: 22
+Total False Negatives: 13
+Total True Negatives: 70
+Total Unknowns: 6
+
+##########################################
+False Positives: 2
+True Positives: 8
+False Negatives: 2
+True Negatives: 18
+Unknowns: 0
+Accuracy: 0.866666666666667
+
+##########################################
+##########################################
+Total False Positives: 11
+Total True Positives: 30
+Total False Negatives: 15
+Total True Negatives: 88
+Total Unknowns: 6
+
+##########################################
+False Positives: 1
+True Positives: 6
+False Negatives: 3
+True Negatives: 17
+Unknowns: 3
+Accuracy: 0.851851851851852
+
+##########################################
+##########################################
+Total False Positives: 12
+Total True Positives: 36
+Total False Negatives: 18
+Total True Negatives: 105
+Total Unknowns: 9
+
+##########################################
+False Positives: 2
+True Positives: 6
+False Negatives: 2
+True Negatives: 18
+Unknowns: 2
+Accuracy: 0.857142857142857
+
+##########################################
+##########################################
+Total False Positives: 14
+Total True Positives: 42
+Total False Negatives: 20
+Total True Negatives: 123
+Total Unknowns: 11
+
+##########################################
+False Positives: 3
+True Positives: 5
+False Negatives: 4
+True Negatives: 17
+Unknowns: 1
+Accuracy: 0.758620689655172
+
+##########################################
+##########################################
+Total False Positives: 17
+Total True Positives: 47
+Total False Negatives: 24
+Total True Negatives: 140
+Total Unknowns: 12
+
+##########################################
+False Positives: 2
+True Positives: 6
+False Negatives: 2
+True Negatives: 17
+Unknowns: 3
+Accuracy: 0.851851851851852
+
+##########################################
+##########################################
+Total False Positives: 19
+Total True Positives: 53
+Total False Negatives: 26
+Total True Negatives: 157
+Total Unknowns: 15
+
+##########################################
+False Positives: 2
+True Positives: 3
+False Negatives: 5
+True Negatives: 18
+Unknowns: 2
+Accuracy: 0.75
+
+##########################################
+##########################################
+Total False Positives: 21
+Total True Positives: 56
+Total False Negatives: 31
+Total True Negatives: 175
+Total Unknowns: 17
+

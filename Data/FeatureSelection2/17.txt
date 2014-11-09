@@ -1,0 +1,89 @@
+BlackishColorBucket10,BlueOneColorBucket10,BlueThreeColorBucket10,BlueTwoColorBucket10,DarkBrownOneColorBucket10,DarkBrownTwoColorBucket10,EdgeLightnessChange,IrregularityIndex,LightBrownOneColorBucket10,LightBrownTwoColorBucket10,SkinColorBucket10,WhitishColorBucket10
+##########################################
+False Positives: 5
+True Positives: 17
+False Negatives: 3
+True Negatives: 5
+Unknowns: 0
+Accuracy: 0,733333333333333
+
+##########################################
+False Positives: 4
+True Positives: 18
+False Negatives: 2
+True Negatives: 6
+Unknowns: 0
+Accuracy: 0,8
+
+##########################################
+False Positives: 4
+True Positives: 16
+False Negatives: 4
+True Negatives: 6
+Unknowns: 0
+Accuracy: 0,733333333333333
+
+##########################################
+False Positives: 5
+True Positives: 18
+False Negatives: 2
+True Negatives: 5
+Unknowns: 0
+Accuracy: 0,766666666666667
+
+##########################################
+False Positives: 4
+True Positives: 18
+False Negatives: 2
+True Negatives: 6
+Unknowns: 0
+Accuracy: 0,8
+
+##########################################
+False Positives: 5
+True Positives: 17
+False Negatives: 3
+True Negatives: 5
+Unknowns: 0
+Accuracy: 0,733333333333333
+
+##########################################
+False Positives: 5
+True Positives: 17
+False Negatives: 3
+True Negatives: 5
+Unknowns: 0
+Accuracy: 0,733333333333333
+
+##########################################
+False Positives: 4
+True Positives: 17
+False Negatives: 3
+True Negatives: 6
+Unknowns: 0
+Accuracy: 0,766666666666667
+
+##########################################
+False Positives: 4
+True Positives: 18
+False Negatives: 2
+True Negatives: 6
+Unknowns: 0
+Accuracy: 0,8
+
+##########################################
+False Positives: 5
+True Positives: 17
+False Negatives: 3
+True Negatives: 5
+Unknowns: 0
+Accuracy: 0,733333333333333
+
+##########################################
+##########################################
+Total False Positives: 45
+Total True Positives: 173
+Total False Negatives: 27
+Total True Negatives: 55
+Total Unknowns: 0
+

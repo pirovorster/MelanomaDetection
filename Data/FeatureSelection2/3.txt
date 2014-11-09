@@ -1,0 +1,89 @@
+VarianceB,VarianceChroma,VarianceG,VarianceHue,VarianceLightness,VarianceR
+##########################################
+False Positives: 2
+True Positives: 19
+False Negatives: 1
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 2
+True Positives: 19
+False Negatives: 1
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 2
+True Positives: 18
+False Negatives: 2
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0,866666666666667
+
+##########################################
+False Positives: 2
+True Positives: 19
+False Negatives: 1
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 2
+True Positives: 19
+False Negatives: 1
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 1
+True Positives: 18
+False Negatives: 2
+True Negatives: 9
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 1
+True Positives: 19
+False Negatives: 1
+True Negatives: 9
+Unknowns: 0
+Accuracy: 0,933333333333333
+
+##########################################
+False Positives: 2
+True Positives: 18
+False Negatives: 2
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0,866666666666667
+
+##########################################
+False Positives: 2
+True Positives: 19
+False Negatives: 1
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 2
+True Positives: 19
+False Negatives: 1
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+##########################################
+Total False Positives: 18
+Total True Positives: 187
+Total False Negatives: 13
+Total True Negatives: 82
+Total Unknowns: 0
+

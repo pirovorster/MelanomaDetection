@@ -1,0 +1,89 @@
+IrregularityIndex,AssymetryPrimaryAxis,AssymetrySecondaryAxis,VarianceHue,VarianceChroma,VarianceLightness,VarianceR,VarianceG,VarianceB,SkinColorBucket10,WhitishColorBucket10,BlackishColorBucket10,LightBrownOneColorBucket10,BlueOneColorBucket10,BlueTwoColorBucket10,BlueThreeColorBucket10,LightBrownTwoColorBucket10,DarkBrownOneColorBucket10,DarkBrownTwoColorBucket10,SkinColorBucket20,WhitishColorBucket20,BlackishColorBucket20,LightBrownOneColorBucket20,BlueOneColorBucket20,BlueTwoColorBucket20,BlueThreeColorBucket20,LightBrownTwoColorBucket20,DarkBrownOneColorBucket20,DarkBrownTwoColorBucket20
+##########################################
+False Positives: 0
+True Positives: 6
+False Negatives: 1
+True Negatives: 17
+Unknowns: 6
+Accuracy: 0,958333333333333
+
+##########################################
+False Positives: 3
+True Positives: 10
+False Negatives: 0
+True Negatives: 17
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 3
+True Positives: 9
+False Negatives: 1
+True Negatives: 17
+Unknowns: 0
+Accuracy: 0,866666666666667
+
+##########################################
+False Positives: 4
+True Positives: 6
+False Negatives: 4
+True Negatives: 16
+Unknowns: 0
+Accuracy: 0,733333333333333
+
+##########################################
+False Positives: 1
+True Positives: 8
+False Negatives: 2
+True Negatives: 19
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 3
+True Positives: 10
+False Negatives: 0
+True Negatives: 17
+Unknowns: 0
+Accuracy: 0,9
+
+##########################################
+False Positives: 3
+True Positives: 8
+False Negatives: 1
+True Negatives: 14
+Unknowns: 4
+Accuracy: 0,846153846153846
+
+##########################################
+False Positives: 1
+True Positives: 7
+False Negatives: 1
+True Negatives: 17
+Unknowns: 4
+Accuracy: 0,923076923076923
+
+##########################################
+False Positives: 3
+True Positives: 8
+False Negatives: 2
+True Negatives: 16
+Unknowns: 1
+Accuracy: 0,827586206896552
+
+##########################################
+False Positives: 3
+True Positives: 9
+False Negatives: 1
+True Negatives: 17
+Unknowns: 0
+Accuracy: 0,866666666666667
+
+##########################################
+##########################################
+Total False Positives: 24
+Total True Positives: 81
+Total False Negatives: 13
+Total True Negatives: 167
+Total Unknowns: 15
+

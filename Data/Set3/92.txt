@@ -1,0 +1,89 @@
+IrregularityIndex,EdgeLightnessChange,VarianceHue,VarianceChroma,VarianceLightness,VarianceR,VarianceG,VarianceB,AverageR,AverageG,AverageB,AverageHue,AverageLightness,AverageChroma,SkinColorBucket20,WhitishColorBucket20,BlackishColorBucket20,LightBrownOneColorBucket20,BlueOneColorBucket20,BlueTwoColorBucket20,BlueThreeColorBucket20,LightBrownTwoColorBucket20,DarkBrownOneColorBucket20,DarkBrownTwoColorBucket20
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 2
+True Negatives: 20
+Unknowns: 1
+Accuracy: 0,931034482758621
+
+##########################################
+False Positives: 1
+True Positives: 4
+False Negatives: 6
+True Negatives: 18
+Unknowns: 1
+Accuracy: 0,758620689655172
+
+##########################################
+False Positives: 0
+True Positives: 3
+False Negatives: 2
+True Negatives: 20
+Unknowns: 5
+Accuracy: 0,92
+
+##########################################
+False Positives: 0
+True Positives: 3
+False Negatives: 2
+True Negatives: 20
+Unknowns: 5
+Accuracy: 0,92
+
+##########################################
+False Positives: 1
+True Positives: 7
+False Negatives: 3
+True Negatives: 19
+Unknowns: 0
+Accuracy: 0,866666666666667
+
+##########################################
+False Positives: 1
+True Positives: 6
+False Negatives: 4
+True Negatives: 19
+Unknowns: 0
+Accuracy: 0,833333333333333
+
+##########################################
+False Positives: 0
+True Positives: 6
+False Negatives: 3
+True Negatives: 20
+Unknowns: 1
+Accuracy: 0,896551724137931
+
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 3
+True Negatives: 19
+Unknowns: 1
+Accuracy: 0,896551724137931
+
+##########################################
+False Positives: 2
+True Positives: 8
+False Negatives: 1
+True Negatives: 18
+Unknowns: 1
+Accuracy: 0,896551724137931
+
+##########################################
+False Positives: 0
+True Positives: 4
+False Negatives: 2
+True Negatives: 20
+Unknowns: 4
+Accuracy: 0,923076923076923
+
+##########################################
+##########################################
+Total False Positives: 5
+Total True Positives: 55
+Total False Negatives: 28
+Total True Negatives: 193
+Total Unknowns: 19
+

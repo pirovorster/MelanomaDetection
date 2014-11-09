@@ -21,9 +21,12 @@ D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Training\bin\D
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Training\obj\Debug\Research.Training.csprojResolveAssemblyReference.cache
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Training\obj\Debug\Research.Training.exe
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Training\obj\Debug\Research.Training.pdb
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Training\bin\Debug\Features.bin
+D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.Training\bin\Debug\Cache.bin
 D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.Training\bin\Debug\Research.Training.exe.config
 D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.Training\obj\Debug\Research.Training.exe
 D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.Training\obj\Debug\Research.Training.pdb
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.Training\bin\Debug\Cache.bin
 D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.Training\bin\Debug\Features.bin
 D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.Training\bin\Debug\Research.Training.exe
 D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.Training\bin\Debug\Research.Training.pdb

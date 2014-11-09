@@ -1,0 +1,161 @@
+AssymetryPrimaryAxis,AssymetrySecondaryAxis,EdgeLightnessChange,AverageHue,AverageLightness,AverageChroma,SkinColorBucket10,WhitishColorBucket10,BlackishColorBucket10,LightBrownOneColorBucket10,BlueOneColorBucket10,BlueTwoColorBucket10,BlueThreeColorBucket10,LightBrownTwoColorBucket10,DarkBrownOneColorBucket10,DarkBrownTwoColorBucket10
+##########################################
+False Positives: 1
+True Positives: 1
+False Negatives: 8
+True Negatives: 19
+Unknowns: 1
+Accuracy: 0.689655172413793
+
+##########################################
+##########################################
+Total False Positives: 1
+Total True Positives: 1
+Total False Negatives: 8
+Total True Negatives: 19
+Total Unknowns: 1
+
+##########################################
+False Positives: 2
+True Positives: 4
+False Negatives: 5
+True Negatives: 17
+Unknowns: 2
+Accuracy: 0.75
+
+##########################################
+##########################################
+Total False Positives: 3
+Total True Positives: 5
+Total False Negatives: 13
+Total True Negatives: 36
+Total Unknowns: 3
+
+##########################################
+False Positives: 1
+True Positives: 3
+False Negatives: 6
+True Negatives: 19
+Unknowns: 1
+Accuracy: 0.758620689655172
+
+##########################################
+##########################################
+Total False Positives: 4
+Total True Positives: 8
+Total False Negatives: 19
+Total True Negatives: 55
+Total Unknowns: 4
+
+##########################################
+False Positives: 1
+True Positives: 4
+False Negatives: 3
+True Negatives: 16
+Unknowns: 6
+Accuracy: 0.833333333333333
+
+##########################################
+##########################################
+Total False Positives: 5
+Total True Positives: 12
+Total False Negatives: 22
+Total True Negatives: 71
+Total Unknowns: 10
+
+##########################################
+False Positives: 0
+True Positives: 4
+False Negatives: 6
+True Negatives: 16
+Unknowns: 4
+Accuracy: 0.769230769230769
+
+##########################################
+##########################################
+Total False Positives: 5
+Total True Positives: 16
+Total False Negatives: 28
+Total True Negatives: 87
+Total Unknowns: 14
+
+##########################################
+False Positives: 1
+True Positives: 2
+False Negatives: 4
+True Negatives: 16
+Unknowns: 7
+Accuracy: 0.782608695652174
+
+##########################################
+##########################################
+Total False Positives: 6
+Total True Positives: 18
+Total False Negatives: 32
+Total True Negatives: 103
+Total Unknowns: 21
+
+##########################################
+False Positives: 1
+True Positives: 4
+False Negatives: 6
+True Negatives: 17
+Unknowns: 2
+Accuracy: 0.75
+
+##########################################
+##########################################
+Total False Positives: 7
+Total True Positives: 22
+Total False Negatives: 38
+Total True Negatives: 120
+Total Unknowns: 23
+
+##########################################
+False Positives: 0
+True Positives: 3
+False Negatives: 4
+True Negatives: 16
+Unknowns: 7
+Accuracy: 0.826086956521739
+
+##########################################
+##########################################
+Total False Positives: 7
+Total True Positives: 25
+Total False Negatives: 42
+Total True Negatives: 136
+Total Unknowns: 30
+
+##########################################
+False Positives: 1
+True Positives: 4
+False Negatives: 4
+True Negatives: 15
+Unknowns: 6
+Accuracy: 0.791666666666667
+
+##########################################
+##########################################
+Total False Positives: 8
+Total True Positives: 29
+Total False Negatives: 46
+Total True Negatives: 151
+Total Unknowns: 36
+
+##########################################
+False Positives: 1
+True Positives: 6
+False Negatives: 3
+True Negatives: 15
+Unknowns: 5
+Accuracy: 0.84
+
+##########################################
+##########################################
+Total False Positives: 9
+Total True Positives: 35
+Total False Negatives: 49
+Total True Negatives: 166
+Total Unknowns: 41
+

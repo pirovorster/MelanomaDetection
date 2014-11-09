@@ -1,0 +1,81 @@
+AssymetryPrimaryAxis,AssymetrySecondaryAxis,IrregularityIndex,EdgeLightnessChange,VarianceHue,VarianceChroma,VarianceLightness,VarianceR,VarianceG,VarianceB,AverageR,AverageG,AverageB,AverageHue,AverageLightness,AverageChroma,SkinColorBucket10,WhitishColorBucket10,BlackishColorBucket10,LightBrownOneColorBucket10,BlueOneColorBucket10,BlueTwoColorBucket10,BlueThreeColorBucket10,LightBrownTwoColorBucket10,DarkBrownOneColorBucket10,DarkBrownTwoColorBucket10
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: NaN
+

@@ -120,9 +120,8 @@ namespace Research.FeatureExtraction
 
 
 					using (MelanomaResearchEntities melanomaResearchEntities = new MelanomaResearchEntities())
-					{
+					{			
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "IrregularityIndex", Value = irregularityIndex, Path = directory.FullName });
-
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "AssymetryPrimaryAxis", Value = primaryOverlap / (double)area, Path = directory.FullName });
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "AssymetrySecondaryAxis", Value = secondaryOverlap / (double)area, Path = directory.FullName });
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "EdgeLightnessChange", Value = edgeLightnessChange, Path = directory.FullName });
@@ -138,6 +137,7 @@ namespace Research.FeatureExtraction
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "AverageHue", Value = averageHue, Path = directory.FullName });
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "AverageLightness", Value = averageLightness, Path = directory.FullName });
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "AverageChroma", Value = averageChroma, Path = directory.FullName });
+						
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "SkinColorBucket10", Value = colorBuckets10[0], Path = directory.FullName });
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "WhitishColorBucket10", Value = colorBuckets10[1], Path = directory.FullName });
 						melanomaResearchEntities.Features.Add(new Feature { FeatureName = "BlackishColorBucket10", Value = colorBuckets10[2], Path = directory.FullName });

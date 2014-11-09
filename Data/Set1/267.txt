@@ -1,0 +1,161 @@
+EdgeLightnessChange,VarianceR,VarianceG,VarianceB,SkinColorBucket20,WhitishColorBucket20,BlackishColorBucket20,LightBrownOneColorBucket20,BlueOneColorBucket20,BlueTwoColorBucket20,BlueThreeColorBucket20,LightBrownTwoColorBucket20,DarkBrownOneColorBucket20,DarkBrownTwoColorBucket20
+##########################################
+False Positives: 2
+True Positives: 7
+False Negatives: 2
+True Negatives: 17
+Unknowns: 2
+Accuracy: 0.857142857142857
+
+##########################################
+##########################################
+Total False Positives: 2
+Total True Positives: 7
+Total False Negatives: 2
+Total True Negatives: 17
+Total Unknowns: 2
+
+##########################################
+False Positives: 1
+True Positives: 6
+False Negatives: 3
+True Negatives: 19
+Unknowns: 1
+Accuracy: 0.862068965517241
+
+##########################################
+##########################################
+Total False Positives: 3
+Total True Positives: 13
+Total False Negatives: 5
+Total True Negatives: 36
+Total Unknowns: 3
+
+##########################################
+False Positives: 0
+True Positives: 4
+False Negatives: 4
+True Negatives: 19
+Unknowns: 3
+Accuracy: 0.851851851851852
+
+##########################################
+##########################################
+Total False Positives: 3
+Total True Positives: 17
+Total False Negatives: 9
+Total True Negatives: 55
+Total Unknowns: 6
+
+##########################################
+False Positives: 2
+True Positives: 6
+False Negatives: 2
+True Negatives: 17
+Unknowns: 3
+Accuracy: 0.851851851851852
+
+##########################################
+##########################################
+Total False Positives: 5
+Total True Positives: 23
+Total False Negatives: 11
+Total True Negatives: 72
+Total Unknowns: 9
+
+##########################################
+False Positives: 0
+True Positives: 5
+False Negatives: 4
+True Negatives: 20
+Unknowns: 1
+Accuracy: 0.862068965517241
+
+##########################################
+##########################################
+Total False Positives: 5
+Total True Positives: 28
+Total False Negatives: 15
+Total True Negatives: 92
+Total Unknowns: 10
+
+##########################################
+False Positives: 3
+True Positives: 8
+False Negatives: 1
+True Negatives: 17
+Unknowns: 1
+Accuracy: 0.862068965517241
+
+##########################################
+##########################################
+Total False Positives: 8
+Total True Positives: 36
+Total False Negatives: 16
+Total True Negatives: 109
+Total Unknowns: 11
+
+##########################################
+False Positives: 1
+True Positives: 5
+False Negatives: 3
+True Negatives: 18
+Unknowns: 3
+Accuracy: 0.851851851851852
+
+##########################################
+##########################################
+Total False Positives: 9
+Total True Positives: 41
+Total False Negatives: 19
+Total True Negatives: 127
+Total Unknowns: 14
+
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 3
+True Negatives: 20
+Unknowns: 0
+Accuracy: 0.9
+
+##########################################
+##########################################
+Total False Positives: 9
+Total True Positives: 48
+Total False Negatives: 22
+Total True Negatives: 147
+Total Unknowns: 14
+
+##########################################
+False Positives: 3
+True Positives: 7
+False Negatives: 3
+True Negatives: 16
+Unknowns: 1
+Accuracy: 0.793103448275862
+
+##########################################
+##########################################
+Total False Positives: 12
+Total True Positives: 55
+Total False Negatives: 25
+Total True Negatives: 163
+Total Unknowns: 15
+
+##########################################
+False Positives: 1
+True Positives: 8
+False Negatives: 1
+True Negatives: 18
+Unknowns: 2
+Accuracy: 0.928571428571429
+
+##########################################
+##########################################
+Total False Positives: 13
+Total True Positives: 63
+Total False Negatives: 26
+Total True Negatives: 181
+Total Unknowns: 17
+

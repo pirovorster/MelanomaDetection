@@ -1,0 +1,89 @@
+AssymetryPrimaryAxis,AssymetrySecondaryAxis,EdgeLightnessChange,IrregularityIndex
+##########################################
+False Positives: 7
+True Positives: 8
+False Negatives: 2
+True Negatives: 1
+Unknowns: 10
+Accuracy: 0,5
+
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 0
+True Negatives: 0
+Unknowns: 26
+Accuracy: 1
+
+##########################################
+False Positives: 7
+True Positives: 17
+False Negatives: 0
+True Negatives: 0
+Unknowns: 11
+Accuracy: 0,708333333333333
+
+##########################################
+False Positives: 4
+True Positives: 8
+False Negatives: 4
+True Negatives: 0
+Unknowns: 13
+Accuracy: 0,5
+
+##########################################
+False Positives: 2
+True Positives: 16
+False Negatives: 0
+True Negatives: 0
+Unknowns: 17
+Accuracy: 0,888888888888889
+
+##########################################
+False Positives: 5
+True Positives: 15
+False Negatives: 0
+True Negatives: 0
+Unknowns: 18
+Accuracy: 0,75
+
+##########################################
+False Positives: 9
+True Positives: 14
+False Negatives: 0
+True Negatives: 0
+Unknowns: 11
+Accuracy: 0,608695652173913
+
+##########################################
+False Positives: 5
+True Positives: 4
+False Negatives: 1
+True Negatives: 0
+Unknowns: 19
+Accuracy: 0,4
+
+##########################################
+False Positives: 5
+True Positives: 8
+False Negatives: 0
+True Negatives: 0
+Unknowns: 13
+Accuracy: 0,615384615384615
+
+##########################################
+False Positives: 8
+True Positives: 4
+False Negatives: 1
+True Negatives: 0
+Unknowns: 18
+Accuracy: 0,307692307692308
+
+##########################################
+##########################################
+Total False Positives: 52
+Total True Positives: 101
+Total False Negatives: 8
+Total True Negatives: 1
+Total Unknowns: 156
+

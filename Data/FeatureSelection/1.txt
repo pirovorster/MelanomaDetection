@@ -1,0 +1,89 @@
+EdgeLightnessChange,IrregularityIndex
+##########################################
+False Positives: 11
+True Positives: 12
+False Negatives: 0
+True Negatives: 1
+Unknowns: 5
+Accuracy: 0,541666666666667
+
+##########################################
+False Positives: 7
+True Positives: 9
+False Negatives: 0
+True Negatives: 0
+Unknowns: 17
+Accuracy: 0,5625
+
+##########################################
+False Positives: 9
+True Positives: 12
+False Negatives: 0
+True Negatives: 0
+Unknowns: 10
+Accuracy: 0,571428571428571
+
+##########################################
+False Positives: 11
+True Positives: 21
+False Negatives: 0
+True Negatives: 0
+Unknowns: 1
+Accuracy: 0,65625
+
+##########################################
+False Positives: 7
+True Positives: 19
+False Negatives: 2
+True Negatives: 0
+Unknowns: 3
+Accuracy: 0,678571428571429
+
+##########################################
+False Positives: 2
+True Positives: 15
+False Negatives: 0
+True Negatives: 0
+Unknowns: 14
+Accuracy: 0,882352941176471
+
+##########################################
+False Positives: 0
+True Positives: 0
+False Negatives: 1
+True Negatives: 0
+Unknowns: 30
+Accuracy: 0
+
+##########################################
+False Positives: 8
+True Positives: 21
+False Negatives: 0
+True Negatives: 0
+Unknowns: 0
+Accuracy: 0,724137931034483
+
+##########################################
+False Positives: 8
+True Positives: 15
+False Negatives: 0
+True Negatives: 0
+Unknowns: 3
+Accuracy: 0,652173913043478
+
+##########################################
+False Positives: 5
+True Positives: 17
+False Negatives: 0
+True Negatives: 0
+Unknowns: 9
+Accuracy: 0,772727272727273
+
+##########################################
+##########################################
+Total False Positives: 68
+Total True Positives: 141
+Total False Negatives: 3
+Total True Negatives: 1
+Total Unknowns: 92
+

@@ -1,0 +1,89 @@
+AverageB,AverageChroma,AverageG,AverageHue,AverageLightness,AverageR,EdgeLightnessChange,IrregularityIndex,VarianceB,VarianceChroma,VarianceG,VarianceHue,VarianceLightness,VarianceR
+##########################################
+False Positives: 2
+True Positives: 7
+False Negatives: 0
+True Negatives: 0
+Unknowns: 25
+Accuracy: 0,777777777777778
+
+##########################################
+False Positives: 10
+True Positives: 24
+False Negatives: 1
+True Negatives: 0
+Unknowns: 1
+Accuracy: 0,685714285714286
+
+##########################################
+False Positives: 6
+True Positives: 12
+False Negatives: 1
+True Negatives: 2
+Unknowns: 12
+Accuracy: 0,666666666666667
+
+##########################################
+False Positives: 9
+True Positives: 13
+False Negatives: 0
+True Negatives: 1
+Unknowns: 11
+Accuracy: 0,608695652173913
+
+##########################################
+False Positives: 10
+True Positives: 13
+False Negatives: 1
+True Negatives: 0
+Unknowns: 4
+Accuracy: 0,541666666666667
+
+##########################################
+False Positives: 3
+True Positives: 5
+False Negatives: 0
+True Negatives: 0
+Unknowns: 21
+Accuracy: 0,625
+
+##########################################
+False Positives: 4
+True Positives: 13
+False Negatives: 4
+True Negatives: 0
+Unknowns: 11
+Accuracy: 0,619047619047619
+
+##########################################
+False Positives: 2
+True Positives: 5
+False Negatives: 2
+True Negatives: 0
+Unknowns: 23
+Accuracy: 0,555555555555556
+
+##########################################
+False Positives: 5
+True Positives: 13
+False Negatives: 1
+True Negatives: 1
+Unknowns: 4
+Accuracy: 0,7
+
+##########################################
+False Positives: 8
+True Positives: 16
+False Negatives: 1
+True Negatives: 0
+Unknowns: 3
+Accuracy: 0,64
+
+##########################################
+##########################################
+Total False Positives: 59
+Total True Positives: 121
+Total False Negatives: 11
+Total True Negatives: 4
+Total Unknowns: 115
+

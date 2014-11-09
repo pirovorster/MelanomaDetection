@@ -1,0 +1,89 @@
+AssymetryPrimaryAxis,AssymetrySecondaryAxis,VarianceB,VarianceChroma,VarianceG,VarianceHue,VarianceLightness,VarianceR
+##########################################
+False Positives: 8
+True Positives: 10
+False Negatives: 4
+True Negatives: 1
+Unknowns: 8
+Accuracy: 0,478260869565217
+
+##########################################
+False Positives: 4
+True Positives: 12
+False Negatives: 2
+True Negatives: 1
+Unknowns: 10
+Accuracy: 0,684210526315789
+
+##########################################
+False Positives: 8
+True Positives: 16
+False Negatives: 5
+True Negatives: 2
+Unknowns: 1
+Accuracy: 0,580645161290323
+
+##########################################
+False Positives: 5
+True Positives: 24
+False Negatives: 1
+True Negatives: 0
+Unknowns: 0
+Accuracy: 0,8
+
+##########################################
+False Positives: 8
+True Positives: 24
+False Negatives: 0
+True Negatives: 0
+Unknowns: 1
+Accuracy: 0,75
+
+##########################################
+False Positives: 4
+True Positives: 9
+False Negatives: 2
+True Negatives: 1
+Unknowns: 14
+Accuracy: 0,625
+
+##########################################
+False Positives: 10
+True Positives: 19
+False Negatives: 4
+True Negatives: 2
+Unknowns: 1
+Accuracy: 0,6
+
+##########################################
+False Positives: 5
+True Positives: 11
+False Negatives: 3
+True Negatives: 1
+Unknowns: 10
+Accuracy: 0,6
+
+##########################################
+False Positives: 6
+True Positives: 17
+False Negatives: 0
+True Negatives: 1
+Unknowns: 4
+Accuracy: 0,75
+
+##########################################
+False Positives: 11
+True Positives: 14
+False Negatives: 2
+True Negatives: 1
+Unknowns: 1
+Accuracy: 0,535714285714286
+
+##########################################
+##########################################
+Total False Positives: 69
+Total True Positives: 156
+Total False Negatives: 23
+Total True Negatives: 10
+Total Unknowns: 50
+

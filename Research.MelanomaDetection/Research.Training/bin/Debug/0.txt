@@ -1,0 +1,115 @@
+AssymetryPrimaryAxis,AssymetrySecondaryAxis,EdgeLightnessChange,IrregularityIndex,VarianceB,VarianceChroma,VarianceG,VarianceHue,VarianceLightness,VarianceR
+##########################################
+False Positives: 2
+True Positives: 18
+False Negatives: 2
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0.866666666666667
+
+##########################################
+False Positives: 1
+True Positives: 20
+False Negatives: 0
+True Negatives: 9
+Unknowns: 0
+Accuracy: 0.966666666666667
+
+##########################################
+False Positives: 1
+True Positives: 19
+False Negatives: 1
+True Negatives: 9
+Unknowns: 0
+Accuracy: 0.933333333333333
+
+##########################################
+False Positives: 8
+True Positives: 19
+False Negatives: 1
+True Negatives: 2
+Unknowns: 0
+Accuracy: 0.7
+
+##########################################
+False Positives: 5
+True Positives: 19
+False Negatives: 1
+True Negatives: 5
+Unknowns: 0
+Accuracy: 0.8
+
+##########################################
+False Positives: 0
+True Positives: 18
+False Negatives: 2
+True Negatives: 10
+Unknowns: 0
+Accuracy: 0.933333333333333
+
+##########################################
+False Positives: 4
+True Positives: 20
+False Negatives: 0
+True Negatives: 6
+Unknowns: 0
+Accuracy: 0.866666666666667
+
+##########################################
+False Positives: 2
+True Positives: 17
+False Negatives: 3
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0.833333333333333
+
+##########################################
+False Positives: 2
+True Positives: 19
+False Negatives: 1
+True Negatives: 8
+Unknowns: 0
+Accuracy: 0.9
+
+##########################################
+False Positives: 0
+True Positives: 16
+False Negatives: 4
+True Negatives: 10
+Unknowns: 0
+Accuracy: 0.866666666666667
+
+##########################################
+##########################################
+Total False Positives: 25
+Total True Positives: 185
+Total False Negatives: 15
+Total True Negatives: 75
+Total Unknowns: 0
+
+
+
+431
+0.00976829827322449
+987
+0.00959858889139201
+959
+0.00859419118246002
+0
+0.0165696460526637
+0
+0.019705417242539
+0
+0.0163298022798268
+0
+0.016332796001077
+841
+0.00961785622057607
+902
+0.00991961024044479
+0
+0.0305401095521754
+0
+
+
+

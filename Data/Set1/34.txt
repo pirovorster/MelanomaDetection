@@ -1,0 +1,161 @@
+IrregularityIndex,AssymetryPrimaryAxis,AssymetrySecondaryAxis,AverageR,AverageG,AverageB
+##########################################
+False Positives: 0
+True Positives: 6
+False Negatives: 2
+True Negatives: 17
+Unknowns: 5
+Accuracy: 0.92
+
+##########################################
+##########################################
+Total False Positives: 0
+Total True Positives: 6
+Total False Negatives: 2
+Total True Negatives: 17
+Total Unknowns: 5
+
+##########################################
+False Positives: 1
+True Positives: 6
+False Negatives: 2
+True Negatives: 17
+Unknowns: 4
+Accuracy: 0.884615384615385
+
+##########################################
+##########################################
+Total False Positives: 1
+Total True Positives: 12
+Total False Negatives: 4
+Total True Negatives: 34
+Total Unknowns: 9
+
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 2
+True Negatives: 16
+Unknowns: 5
+Accuracy: 0.92
+
+##########################################
+##########################################
+Total False Positives: 1
+Total True Positives: 19
+Total False Negatives: 6
+Total True Negatives: 50
+Total Unknowns: 14
+
+##########################################
+False Positives: 0
+True Positives: 4
+False Negatives: 4
+True Negatives: 17
+Unknowns: 5
+Accuracy: 0.84
+
+##########################################
+##########################################
+Total False Positives: 1
+Total True Positives: 23
+Total False Negatives: 10
+Total True Negatives: 67
+Total Unknowns: 19
+
+##########################################
+False Positives: 1
+True Positives: 6
+False Negatives: 3
+True Negatives: 16
+Unknowns: 4
+Accuracy: 0.846153846153846
+
+##########################################
+##########################################
+Total False Positives: 2
+Total True Positives: 29
+Total False Negatives: 13
+Total True Negatives: 83
+Total Unknowns: 23
+
+##########################################
+False Positives: 2
+True Positives: 6
+False Negatives: 2
+True Negatives: 15
+Unknowns: 5
+Accuracy: 0.84
+
+##########################################
+##########################################
+Total False Positives: 4
+Total True Positives: 35
+Total False Negatives: 15
+Total True Negatives: 98
+Total Unknowns: 28
+
+##########################################
+False Positives: 0
+True Positives: 7
+False Negatives: 2
+True Negatives: 14
+Unknowns: 7
+Accuracy: 0.91304347826087
+
+##########################################
+##########################################
+Total False Positives: 4
+Total True Positives: 42
+Total False Negatives: 17
+Total True Negatives: 112
+Total Unknowns: 35
+
+##########################################
+False Positives: 1
+True Positives: 4
+False Negatives: 3
+True Negatives: 18
+Unknowns: 4
+Accuracy: 0.846153846153846
+
+##########################################
+##########################################
+Total False Positives: 5
+Total True Positives: 46
+Total False Negatives: 20
+Total True Negatives: 130
+Total Unknowns: 39
+
+##########################################
+False Positives: 1
+True Positives: 6
+False Negatives: 2
+True Negatives: 17
+Unknowns: 4
+Accuracy: 0.884615384615385
+
+##########################################
+##########################################
+Total False Positives: 6
+Total True Positives: 52
+Total False Negatives: 22
+Total True Negatives: 147
+Total Unknowns: 43
+
+##########################################
+False Positives: 1
+True Positives: 7
+False Negatives: 3
+True Negatives: 15
+Unknowns: 4
+Accuracy: 0.846153846153846
+
+##########################################
+##########################################
+Total False Positives: 7
+Total True Positives: 59
+Total False Negatives: 25
+Total True Negatives: 162
+Total Unknowns: 47
+

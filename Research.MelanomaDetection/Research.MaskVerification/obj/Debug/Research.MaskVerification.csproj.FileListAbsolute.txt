@@ -11,3 +11,16 @@ D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskVerificati
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.exe
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.pdb
 D:\Studies 2014\Research\Code\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.csprojResolveAssemblyReference.cache
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\bin\Debug\Research.MaskVerification.exe.config
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\bin\Debug\Research.MaskVerification.exe
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\bin\Debug\Research.MaskVerification.pdb
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.csprojResolveAssemblyReference.cache
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\MainWindow.baml
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\MainWindow.g.cs
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\App.g.cs
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification_MarkupCompile.cache
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.g.resources
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.Properties.Resources.resources
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.csproj.GenerateResource.Cache
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.exe
+D:\Studies 2014\Research\Code\git\Research.MelanomaDetection\Research.MaskVerification\obj\Debug\Research.MaskVerification.pdb
