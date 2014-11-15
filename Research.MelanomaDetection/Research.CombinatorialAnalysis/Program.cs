@@ -32,7 +32,7 @@ namespace Research.CombinatorialAnalysis
 
 		static void Main(string[] args)
 		{
-			string path = @"D:\Studies 2014\Research\Code\Data\FeatureSelection2";
+			string path = @"D:\Studies 2014\Research\Code\Data\FeatureSelection4";
 			List<FileInfo> fileInfos = new DirectoryInfo(path).GetFiles("*.txt").ToList();
 			
 			fileInfos.Remove(fileInfos.Last());
@@ -81,7 +81,7 @@ namespace Research.CombinatorialAnalysis
 			//int a = measurements.Select(o => string.Join(",", o.Features)).Distinct().Count();
 			//int b = measurements.Select(o => string.Join(",", o.Features)).Count();
 			List<IEnumerable<string>> combosList = FeatureCombo().Where(o => o.Any() && !string.IsNullOrEmpty(o.First())).ToList();
-			using (StreamWriter textWriter = new StreamWriter("OrderedCombinations2.txt", true))
+			using (StreamWriter textWriter = new StreamWriter("OrderedCombinations4.txt", true))
 			{
 				foreach (Measurement measurement in measurements.OrderByDescending(o => o.Accurancy))
 				{

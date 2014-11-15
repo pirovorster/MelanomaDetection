@@ -139,8 +139,6 @@ namespace Research.Training
 
 			int endExclude = int.Parse(args[1]);
 
-
-
 			Random ran = new Random(DateTime.Now.Millisecond);
 
 
@@ -176,24 +174,24 @@ namespace Research.Training
 				IEnumerable<string> randomizedMelanomas = allMelanomas.Select(o => o).Shuffle();
 				IEnumerable<string> randomizedBenigns = allBenigns.Select(o=>o).Shuffle();
 				Experiment experiment = new Experiment();
-				experiment.BenignTrainingSet = randomizedBenigns.Take(50).ToList();
-				experiment.MelanomaTrainingSet = randomizedMelanomas.Take(20).ToList();
-				experiment.BenignTestSet = randomizedBenigns.Skip(50).Take(20).ToList();
-				experiment.MelanomaTestSet = randomizedMelanomas.Skip(20).Take(10).ToList();
+				experiment.BenignTrainingSet = randomizedBenigns.Take(40).ToList();
+				experiment.MelanomaTrainingSet = randomizedMelanomas.Take(30).ToList();
+				experiment.BenignTestSet = randomizedBenigns.Skip(40).Take(20).ToList();
+				experiment.MelanomaTestSet = randomizedMelanomas.Skip(30).Take(10).ToList();
 				experiments.Add(experiment);
 
 			}
 
 			for (int index = startInc; index < endExclude; index++)
 			{
-				var combos = "AssymetryPrimaryAxis,AssymetrySecondaryAxis,EdgeLightnessChange,IrregularityIndex,VarianceB,VarianceChroma,VarianceG,VarianceHue,VarianceLightness,VarianceR".Split(',');
+				var combos = combosList[index];// "AssymetryPrimaryAxis,AssymetrySecondaryAxis,EdgeLightnessChange,IrregularityIndex,VarianceB,VarianceChroma,VarianceG,VarianceHue,VarianceLightness,VarianceR".Split(',');
 
 
-				//if (File.Exists(string.Format("{0}.txt", index)) || cache.Contains(string.Join(",", combos.OrderBy(o => o)).ToUpperInvariant()))
-				//{
-				//	Console.WriteLine("{0} Skipped", index);
-				//	continue;
-				//}
+				if (File.Exists(string.Format("{0}.txt", index)) || cache.Contains(string.Join(",", combos.OrderBy(o => o)).ToUpperInvariant()))
+				{
+					Console.WriteLine("{0} Skipped", index);
+					continue;
+				}
 
 				File.Create(string.Format("{0}.txt", index)).Close();
 
